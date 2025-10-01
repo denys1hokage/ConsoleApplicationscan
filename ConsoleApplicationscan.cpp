@@ -1,11 +1,17 @@
 // ConsoleApplicationscan.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+#include "Scanner.h"
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    string user;
+    cout << "Enter file name :" << endl;
+    cin >> user;
+
+    Scanner hp;
+    hp.scanFile(user);
+    cout << "Info :\n" << hp.getText();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
